@@ -6,11 +6,11 @@
 * [Basic Example](#basic-example)
 * [References](#references)
 
-## Introduction {#introduction}
+## Introduction
 
 The Laravel inversion of control container is a powerful tool for managing class dependencies. Dependency injection is a method of removing hard-coded class dependencies. Instead, the dependencies are injected at run-time, allowing for greater flexibility as dependency implementations may be swapped easily.
 
-## Basic Example {#basic-example}
+## Basic Example
 
 ### Project Directory
 
@@ -80,7 +80,7 @@ interface FuelInterface
 ```
 
 
-## References {#references}
+## References
 
 * [IoC Container Documentation](http://laravel.com/docs/4.2/ioc)
 * [Term: IoC Container](https://laracasts.com/lessons/term-ioc-container)
