@@ -288,7 +288,13 @@ $app->afterResolving('FuelInterface', function ($fuel) {
     $fuel->setPrice($fuel->getPrice() * 1.06);
 });
 
+$axia = $app->make('Axia');
 
+echo $axia->refuel(50) . PHP_EOL;
+
+$civic = $app->make('CivicTypeR');
+
+echo $civic->refuel(50) . PHP_EOL;
 ```
 
 ## References
