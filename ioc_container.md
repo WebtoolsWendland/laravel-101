@@ -297,6 +297,22 @@ $civic = $app->make('CivicTypeR');
 echo $civic->refuel(50) . PHP_EOL;
 ```
 
+#### Axia want to try Ron97
+
+```php
+<?php
+
+require_once "vendor/autoload.php";
+
+$app = new Illuminate\Container\Container();
+
+$app->when('Axia')->needs('FuelInterface')->give('Ron97');
+
+$axia = $app->make('Axia');
+
+echo $axia->refuel(50) . PHP_EOL;
+```
+
 ## References
 
 * [IoC Container Documentation](http://laravel.com/docs/4.2/ioc)
