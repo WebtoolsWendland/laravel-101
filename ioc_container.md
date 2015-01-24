@@ -275,6 +275,21 @@ $civic = $app->make('CivicTypeR', [$ron97]);
 echo $civic->refuel(50) . PHP_EOL;
 ```
 
+#### GST for Fuel
+
+```php
+<?php
+
+require_once "vendor/autoload.php";
+
+$app = new Illuminate\Container\Container();
+
+$app->afterResolving('FuelInterface', function ($fuel) {
+    $fuel->setPrice($fuel->getPrice() * 1.06);
+});
+
+
+```
 
 ## References
 
