@@ -12,6 +12,8 @@ The Laravel inversion of control container is a powerful tool for managing class
 
 ## [Basic Example](id:basic-example)
 
+### Project Directory
+
 ```
 /src
     /CarInterface.php
@@ -23,6 +25,8 @@ The Laravel inversion of control container is a powerful tool for managing class
 /composer.json
 ```
 
+#### File: composer.json
+
 ```json
 {
     "autoload": {
@@ -33,6 +37,8 @@ The Laravel inversion of control container is a powerful tool for managing class
     }
 }
 ```
+
+#### File: src/CarInterface.php
 
 ```php
 <?php
@@ -48,6 +54,8 @@ interface CarInterface
     public function refuel($litres);
 }
 ```
+
+#### File: src/FuelInterface.php
 
 ```php
 <?php
