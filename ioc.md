@@ -317,5 +317,5 @@ echo $civic->refuel(100) . PHP_EOL;
 * [Laracast on IoC](https://laracasts.com/search?q=ioc&q-where=lessons)
 * [Digging in to Laravel's IoC Container](http://code.tutsplus.com/tutorials/digging-in-to-laravels-ioc-container--cms-22167)
  
-[1]: http://laravel.com/docs/4.2/ioc#introduction [Introduction: IoC Container](http://laravel.com/docs/4.2/ioc#introduction) 
+[1]: http://laravel.com/docs/4.2/ioc#introduction Introduction: IoC Container
 
