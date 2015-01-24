@@ -12,14 +12,46 @@ The Laravel inversion of control container is a powerful tool for managing class
 
 ## [Basic Example](id:basic-example)
 
-Hello world.
+```
+src/
+    CarInterface.php
+    FuelInterface.php
+```
+
+```php
+<?php
+
+interface CarInterface
+{
+    /**
+     * Refuel the car.
+     *
+     * @param  int|double $litres
+     * @return double
+     */
+    public function refuel($litres);
+}
+```
 
 ```php
 <?php
 
 interface FuelInterface
 {
+    /**
+     * Get fuel price.
+     *
+     * @return double
+     */
     public function getPrice();
+    
+    /**
+     * Set fuel price.
+     *
+     * @param  double  $price
+     * @return double
+     */
+    public function setPrice($price);    
 }
 ```
 
