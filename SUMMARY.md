@@ -1,6 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* IoC Container
-   * Table of Content
+* [IoC Container](ioc_container.md)
 
