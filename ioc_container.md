@@ -19,7 +19,7 @@ Hello world.
 
 interface FuelInterface
 {
-    
+    public function getPrice();
 }
 ```
 
