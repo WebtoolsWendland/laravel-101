@@ -240,11 +240,11 @@ require_once "vendor/autoload.php";
 
 $axia = new Axia(new Ron95());
 
-echo $axia->refuel(50) . PHP_EOL;
+echo $axia->refuel(100) . PHP_EOL;
 
 $civic = new CivicTypeR(new Ron97());
 
-echo $civic->refuel(50) . PHP_EOL;
+echo $civic->refuel(100) . PHP_EOL;
 ```
 
 Limitation:
@@ -267,12 +267,12 @@ $app->bind('FuelInterface', 'Ron95');
 
 $axia = $app->make('Axia');
 
-echo $axia->refuel(50) . PHP_EOL;
+echo $axia->refuel(100) . PHP_EOL;
 
 $ron97 = $app->make('Ron97');
 $civic = $app->make('CivicTypeR', [$ron97]);
 
-echo $civic->refuel(50) . PHP_EOL;
+echo $civic->refuel(100) . PHP_EOL;
 ```
 
 #### GST for Fuel
@@ -290,11 +290,11 @@ $app->afterResolving('FuelInterface', function ($fuel) {
 
 $axia = $app->make('Axia');
 
-echo $axia->refuel(50) . PHP_EOL;
+echo $axia->refuel(100) . PHP_EOL;
 
 $civic = $app->make('CivicTypeR');
 
-echo $civic->refuel(50) . PHP_EOL;
+echo $civic->refuel(100) . PHP_EOL;
 ```
 
 #### Axia want to try Ron97
@@ -310,7 +310,11 @@ $app->when('Axia')->needs('FuelInterface')->give('Ron97');
 
 $axia = $app->make('Axia');
 
-echo $axia->refuel(50) . PHP_EOL;
+echo $axia->refuel(100) . PHP_EOL;
+
+$civic = $app->make('CivicTypeR');
+
+echo $civic->refuel(100) . PHP_EOL;
 ```
 
 ## References
