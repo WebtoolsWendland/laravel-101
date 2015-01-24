@@ -11,4 +11,3 @@
   - [Basic Example](ioc.md#basic-example)
   - [References](ioc.md#references)
 * [Model-View-Controller](mvc.md)
-
