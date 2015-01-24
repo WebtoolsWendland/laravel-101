@@ -247,6 +247,35 @@ $civic = new CivicTypeR(new Ron97());
 echo $civic->refuel(50) . PHP_EOL;
 ```
 
+Limitation:
+
+* What happen when the fuel price change?
+* How do we change the code if `Axia` need to use `Ron97` for any reason?
+ 
+### IoC to the rescue
+
+#### Simple Example
+
+```php
+<?php
+
+require_once "vendor/autoload.php";
+
+$app = new Illuminate\Container\Container();
+
+$app->bind('FuelInterface', 'Ron95');
+
+$axia = $app->make('Axia');
+
+echo $axia->refuel(50) . PHP_EOL;
+
+$ron97 = $app->make('Ron97');
+$civic = $app->make('CivicTypeR', [$ron97]);
+
+echo $civic->refuel(50) . PHP_EOL;
+```
+
+
 ## References
 
 * [IoC Container Documentation](http://laravel.com/docs/4.2/ioc)
