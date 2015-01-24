@@ -13,9 +13,25 @@ The Laravel inversion of control container is a powerful tool for managing class
 ## [Basic Example](id:basic-example)
 
 ```
-src/
-    CarInterface.php
-    FuelInterface.php
+/src
+    /CarInterface.php
+    /FuelInterface.php
+    /Axia.php
+    /CivicTypeR.php
+    /Ron95.php
+    /Ron97.php
+/composer.json
+```
+
+```json
+{
+    "autoload": {
+        "psr-4": { "": "src/"}
+    },
+    "require": {
+        "illuminate/container": "~5.0"
+    }
+}
 ```
 
 ```php
