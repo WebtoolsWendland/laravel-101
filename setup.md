@@ -8,6 +8,7 @@ The following tool is needed for our training, please install:
 2. [Vagrant](https://www.vagrantup.com/downloads.html)
 3. [Node.js](http://nodejs.org/)
 
+> Note: Should install each package by order.
 
 ## Troubleshooting
 
