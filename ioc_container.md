@@ -79,6 +79,80 @@ interface FuelInterface
 }
 ```
 
+#### File: src/Axia.php
+
+```php
+<?php
+
+class Axia implements CarInterface
+{
+    /**
+     * The implementation of fuel.
+     *
+     * @var FuelInterface
+     */
+    protected $fuel;
+
+    /**
+     * Construct a new Car implementation.
+     *
+     * @param FuelInterface $fuel
+     */
+    public function __construct(Fuel $fuel)
+    {
+        $this->fuel = $fuel;
+    }
+
+    /**
+     * Refuel the car.
+     *
+     * @param  int|double  $litres
+     * @return double
+     */
+    public function refuel($litres)
+    {
+        return $litres * $this->fuel->getPrice();
+    }
+}
+```
+
+#### File: src/CivicTypeR.php
+
+```php
+<?php
+
+class CivicTypeR implements Car
+{
+    /**
+     * The implementation of fuel.
+     *
+     * @var Ron97
+     */
+    protected $fuel;
+
+    /**
+     * Construct a new Car implementation.
+     *
+     * @param Ron97 $fuel
+     */
+    public function __construct(Ron97 $fuel)
+    {
+        $this->fuel = $fuel;
+    }
+
+    /**
+     * Refuel the car.
+     *
+     * @param  int|double  $litres
+     * @return double
+     */
+    public function refuel($litres)
+    {
+        return $litres * $this->fuel->getPrice();
+    }
+
+}
+```
 
 ## References
 
