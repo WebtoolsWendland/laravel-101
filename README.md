@@ -1,3 +1,3 @@
 # Laravel Training
 
-This book contains relevant notes on Laravel 5. 
+Official handbook for Laravel 5 training.
