@@ -313,6 +313,25 @@ $civic = $app->make('CivicTypeR');
 echo $civic->refuel(100) . PHP_EOL;
 ```
 
+#### As Service Location
+
+```php
+<?php
+
+require "vendor/autoload.php";
+
+$app = new Illuminate\Container\Container();
+
+
+$app->singleton('fuel.ron97', function () {
+	return new Ron97;
+});
+
+$app->bind('axia.ron97', function ($app) {
+	return new Axia($app->make('fuel.ron97'));
+});
+```
+
 ## Code Review
 
 Code example can be accessed from <https://github.com/threening/ioc-container>.
