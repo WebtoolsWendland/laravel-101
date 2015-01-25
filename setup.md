@@ -28,29 +28,36 @@ Once you have `Vagrantfile` inside the root directory of `basecamp`.
 
 Change the value of `hostname` to be relevant to your project. E.g:	
 
-	hostname = "basecamp.app"
+```ruby
+hostname = "basecamp.app"
+```
 
 ##### 2.2. Setup Server IP
 
 Change the value of `server_ip` which is not currently used. E.g:
 
-	server_io = "192.168.210.10"
+```ruby
+server_ip = "192.168.210.10"
+```
 
 ##### 2.3. Setup Public Directory
 
 Change the value of `public_folder` to Orchestra Platform 3 public folder, by default this would be based on `public` directory:
 
-	public_folder = '/vagrant/public'
+```ruby
+public_folder = '/vagrant/public'
+```
 
 ##### 2.4. Change VM Name
 
 (Optional) but you should be able to set a customise name for your VM:
 
+```ruby
 	# If using VirtualBox
 	config.vm.provider :virtualbox do |vb|
 	
 		vb.name = 'Basecamp'
-
+```
 
 ## Troubleshooting
 
