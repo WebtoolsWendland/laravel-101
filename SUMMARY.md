@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Requirement](requirement.md)
 * [IoC Container](ioc.md)
   - [Introduction](ioc.md#introduction)
   - [Basic Example](ioc.md#basic-example)
@@ -11,7 +12,6 @@
 	 - [Model-View-Controller](design-pattern.md#model-view-controller)
 	 - [References](design-pattern.md#references)
 * [Setup Your Environment](setup.md)
-  - [Pre-requirement](setup.md#pre-requirement)
   - [Installation](setup.md#installation)
   - [Troubleshooting](setup.md#troubleshooting)
   - [Alternative Tools](setup.md#alternative-tools)
