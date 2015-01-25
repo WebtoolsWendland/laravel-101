@@ -278,6 +278,8 @@ require_once "vendor/autoload.php";
 
 $app = new Illuminate\Container\Container();
 
+$app->bind('FuelInterface', 'Ron95');
+
 $app->afterResolving('FuelInterface', function ($fuel) {
     $fuel->setPrice($fuel->getPrice() * 1.06);
 });
@@ -310,6 +312,10 @@ $civic = $app->make('CivicTypeR');
 
 echo $civic->refuel(100) . PHP_EOL;
 ```
+
+## Code Review
+
+Code example can be accessed from <https://github.com/threening/ioc-container>.
 
 ## References
 
