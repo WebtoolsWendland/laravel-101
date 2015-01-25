@@ -337,7 +337,8 @@ Code example can be accessed from <https://github.com/threening/ioc-container>.
 
 ## References
 
-* [IoC Container Documentation](http://laravel.com/docs/4.2/ioc)
+* [IoC Container Documentation for Laravel 4](http://laravel.com/docs/4.2/ioc)
+* [IoC Container Documentation for Laravel 5](http://laravel.com/docs/master/container)
 * [Laracast on IoC](https://laracasts.com/search?q=ioc&q-where=lessons)
 * [Digging in to Laravel's IoC Container](http://code.tutsplus.com/tutorials/digging-in-to-laravels-ioc-container--cms-22167)
  
