@@ -16,6 +16,12 @@ The following tool is needed for our training, please install:
 
 `composer create-project orchestra/platform basecamp dev-master ---prefer-dist -vvv --profile`
 
+#### 2. Install Vaprobash
+
+Follow the instruction from <https://github.com/fideloper/Vaprobash#instructions>, e.g:
+
+	$ curl -L http://bit.ly/vaprobash > Vagrantfile
+
 
 
 ## Troubleshooting
