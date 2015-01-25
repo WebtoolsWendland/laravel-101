@@ -59,6 +59,34 @@ public_folder = '/vagrant/public'
 		vb.name = 'Basecamp'
 ```
 
+##### 2.5 Setup Base Packages
+
+Now, it's time to customise the set of packages to be provisioned on the VM. For this course we will be using:
+
+* Nginx
+* PHP 5.6
+* MariaDB
+* Redis
+* Beanstalkd
+* Supervisord
+* Node.js
+* Composer
+* Mailcatcher
+* Setup local provision
+ 
+##### 2.6 Setup Local Provision
+
+Create a new `vagrant.sh` file:
+
+```bash
+#!/usr/bin/env bash
+
+/usr/bin/mysql -uroot -proot -e "CREATE DATABASE IF NOT EXISTS basecamp DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;"
+
+cd /vagrant/
+composer install --prefer-dist --dev
+```
+
 ## Troubleshooting
 
 By default, NFS won't work on Windows. I suggest deleting the  NFS block so Vagrant defaults back to its default file sync behavior.
