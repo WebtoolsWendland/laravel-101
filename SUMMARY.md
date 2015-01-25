@@ -13,3 +13,5 @@
   - [Code Review](ioc.md#code-review)
   - [References](ioc.md#references)
 * [Model-View-Controller](mvc.md)
+	 - [Introduction](mvc.md#introduction)
+	 - [References](mvc.md#references)
