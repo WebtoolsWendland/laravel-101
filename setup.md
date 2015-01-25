@@ -12,6 +12,10 @@ The following tool is needed for our training, please install:
 
 ## Installation
 
+### 1. Install Orchestra Platform
+
+`composer create-project orchestra/platform basecamp dev-master ---prefer-dist -vvv --profile`
+
 
 
 ## Troubleshooting
