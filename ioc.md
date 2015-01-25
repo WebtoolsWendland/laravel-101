@@ -322,7 +322,6 @@ require "vendor/autoload.php";
 
 $app = new Illuminate\Container\Container();
 
-
 $app->singleton('fuel.ron97', function () {
 	return new Ron97;
 });
