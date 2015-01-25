@@ -5,6 +5,7 @@
   - [Pre-requirement](setup.md#pre-requirement)
   - [Installation](setup.md#installation)
   - [Troubleshooting](setup.md#troubleshooting)
+  - [Alternative Tools](setup.md#alternative-tools)
   - [References](setup.md#references)
 * [IoC Container](ioc.md)
   - [Introduction](ioc.md#introduction)
