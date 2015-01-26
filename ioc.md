@@ -156,11 +156,18 @@ class CivicTypeR implements CarInterface
 class Ron95 implements FuelInterface
 {
     /**
-     * Price value.
+     * Base value.
      *
      * @var double
      */
     protected $value = 1.91;
+
+	   /**
+     * Price value.
+     *
+     * @var double
+     */
+    protected $price = null;
 
     /**
      * Get fuel price.
@@ -169,7 +176,7 @@ class Ron95 implements FuelInterface
      */
     public function getPrice()
     {
-        return $this->value;
+        return $this->price ?: $this->value;
     }
 
     /**
@@ -200,6 +207,13 @@ class Ron97 implements FuelInterface
      */
     protected $value = 2.11;
 
+	   /**
+     * Price value.
+     *
+     * @var double
+     */
+    protected $price = null;
+
     /**
      * Get fuel price.
      *
@@ -207,7 +221,7 @@ class Ron97 implements FuelInterface
      */
     public function getPrice()
     {
-        return $this->value;
+        return $this->price ?: $this->value;
     }
 
     /**
