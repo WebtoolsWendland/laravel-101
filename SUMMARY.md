@@ -14,6 +14,8 @@
   - [References](setup.md#references)
 * [Installation](installation.md)
 * [Routing](routing.md)
+* [Controllers](controllers.md)
+* [Blade](blade.md)
 * [Design Pattern](design-pattern.md)
 	 - [Introduction](design-pattern.md#introduction)
 	 - [Model-View-Controller](design-pattern.md#model-view-controller)

@@ -9,7 +9,8 @@
 * [Setup Your Environment](setup.md)
 * [Installation](installation.md)
 * [Routing](routing.md)
-* Blade
+* [Controllers](controllers.md)
+* [Blade](blade.md)
  
 ## Day 3
 
