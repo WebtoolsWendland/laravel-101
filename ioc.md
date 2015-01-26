@@ -92,7 +92,7 @@ class Axia implements CarInterface
      *
      * @param FuelInterface $fuel
      */
-    public function __construct(Fuel $fuel)
+    public function __construct(FuelInterface $fuel)
     {
         $this->fuel = $fuel;
     }
