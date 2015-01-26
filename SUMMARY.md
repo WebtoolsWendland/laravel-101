@@ -7,7 +7,6 @@
   - [Basic Example](ioc.md#basic-example)
   - [Code Review](ioc.md#code-review)
   - [References](ioc.md#references)
-	 - [References](design-pattern.md#references)
 * [Setup Your Environment](setup.md)
   - [Installation](setup.md#installation)
   - [Troubleshooting](setup.md#troubleshooting)
@@ -17,3 +16,4 @@
 * [Design Pattern](design-pattern.md)
 	 - [Introduction](design-pattern.md#introduction)
 	 - [Model-View-Controller](design-pattern.md#model-view-controller)
+	 - [References](design-pattern.md#references)

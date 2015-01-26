@@ -7,8 +7,8 @@
 ## Day 2
 
 * [Setup Your Environment](setup.md)
-* Installation
-* Routing
+* [Installation](installation.md)
+* [Routing](routing.md)
 * Blade
  
 ## Day 3
