@@ -4,9 +4,9 @@
 
 The following tool is needed for our training, please install:
 
-1. [VirtualBox]()
+1. [VirtualBox](https://www.virtualbox.org/)
 2. [Vagrant](https://www.vagrantup.com/downloads.html)
-3. [Node.js](http://nodejs.org/)
+3. [Homestead](http://laravel.com/docs/master/homestead)
 
 > Note: Should install each package by order.
 
@@ -16,7 +16,9 @@ The following tool is needed for our training, please install:
 
 	$ composer create-project orchestra/platform basecamp dev-master ---prefer-dist -vvv --profile
 
-#### 2. Install Vaprobash
+> `--prefer-dist` would download each packages as zip archive while `--prefer-source` would git clone each packages.
+
+### 2. Install Vaprobash
 
 Follow the instruction from <https://github.com/fideloper/Vaprobash#instructions>, e.g:
 
@@ -24,7 +26,7 @@ Follow the instruction from <https://github.com/fideloper/Vaprobash#instructions
 
 Once you have `Vagrantfile` inside the root directory of `basecamp`.
 
-##### 2.1. Setup hostname
+#### 2.1. Setup hostname
 
 Change the value of `hostname` to be relevant to your project. E.g:	
 
@@ -32,7 +34,7 @@ Change the value of `hostname` to be relevant to your project. E.g:
 hostname = "basecamp.app"
 ```
 
-##### 2.2. Setup Server IP
+#### 2.2. Setup Server IP
 
 Change the value of `server_ip` which is not currently used. E.g:
 
@@ -40,7 +42,7 @@ Change the value of `server_ip` which is not currently used. E.g:
 server_ip = "192.168.210.10"
 ```
 
-##### 2.3. Setup Public Directory
+#### 2.3. Setup Public Directory
 
 Change the value of `public_folder` to Orchestra Platform 3 public folder, by default this would be based on `public` directory:
 
@@ -86,6 +88,11 @@ Create a new `vagrant.sh` file:
 cd /vagrant/
 composer install --prefer-dist --dev
 ```
+
+### 3. Using Homestead (Alternative to #2)
+
+Follow the installation provided in <http://laravel.com/docs/master/homestead#introduction>.
+
 
 ## Troubleshooting
 
